@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox x:Name="txtNomeLBr" HorizontalAlignment="Left" Margin="66,115,0,0" TextWrapping="Wrap" Text="inserire il nome del libro" VerticalAlignment="Top" Width="138" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtTitotolo" HorizontalAlignment="Left" Margin="65,145,0,0" TextWrapping="Wrap" Text="inserire il titolo" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Margin="65,172,0,0" TextWrapping="Wrap" Text="editore" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAnnoDiPublicazione" HorizontalAlignment="Left" Margin="64,196,0,0" TextWrapping="Wrap" Text="Anno Di publicazione" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNUmPag" HorizontalAlignment="Left" Margin="61,221,0,0" TextWrapping="Wrap" Text="NUmero di pagine" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="aggiungi_Libro_" Content="aggiungi libro nella Bibloteca" HorizontalAlignment="Left" Margin="228,138,0,0" VerticalAlignment="Top" Height="41" Width="174"/>
+        <Label Content="informazioni libro" Margin="71,83,573,323"/>
+        <TextBox x:Name="txtNomeBibloteca" TextWrapping="Wrap" Text="inserire Il Nome della bibloteca&#xD;&#xA;" Margin="55,330,550,83"/>
+        <TextBox x:Name="txtoraIn" TextWrapping="Wrap" Text="orario di apertura" Margin="54,355,622,58"/>
+        <TextBox x:Name="txtOraOut" TextWrapping="Wrap" Text="orario di chisura&#xD;&#xA;" Margin="54,377,622,36"/>
+        <Label Content="informazioni Biblobteca" Margin="53,294,591,112"/>
 
     </Grid>
 </Window>
