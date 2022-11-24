@@ -13,7 +13,14 @@ namespace Bibloteca_Ricci
         internal int orarioDiCiusura { get; set; }
         List<Libro> ElenciLibri = new();
 
-     
+        internal Bibloteca(Libro Libro, string nome, int oraIn, int oraOut)
+        {
+
+            ElenciLibri.Add(Libro);
+            this.orarioDiApertura = oraIn;
+            this.Nome = nome;
+            this.orarioDiCiusura = oraOut;
+        }
     }
     
     
