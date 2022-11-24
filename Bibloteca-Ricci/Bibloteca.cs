@@ -13,13 +13,36 @@ namespace Bibloteca_Ricci
         internal int orarioDiCiusura { get; set; }
         List<Libro> ElenciLibri = new();
 
-        internal Bibloteca(Libro Libro, string nome, int oraIn, int oraOut)
+        internal Bibloteca(Libro Libro)
         {
-
             ElenciLibri.Add(Libro);
-            this.orarioDiApertura = oraIn;
-            this.Nome = nome;
-            this.orarioDiCiusura = oraOut;
+        }
+
+        internal string ricercaLibroPerAutore(string autore) 
+        {
+            foreach (Libro Libro in ElenciLibri) {
+
+                if (Libro.Autore.Contains(autore)) {
+
+                    return Libro.toString();
+                }
+                
+            }
+            return null;
+        }
+        internal string ricercaLibroPerTtitolo(string tittolo)
+        {
+            foreach (Libro Libro in ElenciLibri)
+            {
+
+                if (Libro.titolo.Contains(tittolo))
+                {
+
+                    return Libro.toString();
+                }
+
+            }
+            return null;
         }
     }
     

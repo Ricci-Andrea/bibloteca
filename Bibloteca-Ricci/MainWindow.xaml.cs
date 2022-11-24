@@ -25,6 +25,27 @@ namespace Bibloteca_Ricci
             InitializeComponent();
         }
 
-      
+        Bibloteca b;
+        private void aggiungi_Libro__Click(object sender, RoutedEventArgs e)
+        {
+            Libro libro = new();
+            txtTitotolo.Text = libro.titolo;
+            txtNUmPag.Text = libro.numeroDiPagine.ToString();
+            txtAnnoDiPublicazione.Text = libro.AnnoDiPublicazione;
+            txtNomeLBr.Text = libro.Autore;
+            txtEditore.Text = libro.Editore;
+            new Bibloteca(libro);
+
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string tittolo="";
+            txtTtitoloRic.Text = tittolo;
+            string tittoloCheStatoRicercato;
+            tittoloCheStatoRicercato = b.ricercaLibroPerTtitolo(tittolo);
+            lstRisRic.Items.Add(tittoloCheStatoRicercato);
+        }
     }
 }
