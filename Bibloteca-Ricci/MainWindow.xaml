@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="txtNomeLBr" HorizontalAlignment="Left" Margin="66,115,0,0" TextWrapping="Wrap" Text="inserire il nome del libro" VerticalAlignment="Top" Width="138" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtNomeLBr" HorizontalAlignment="Left" Margin="66,115,0,0" TextWrapping="Wrap" Text="inserire il nome del Autore" VerticalAlignment="Top" Width="138" TextChanged="TextBox_TextChanged"/>
         <TextBox x:Name="txtTitotolo" HorizontalAlignment="Left" Margin="65,145,0,0" TextWrapping="Wrap" Text="inserire il titolo" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Margin="65,172,0,0" TextWrapping="Wrap" Text="editore" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtAnnoDiPublicazione" HorizontalAlignment="Left" Margin="64,196,0,0" TextWrapping="Wrap" Text="Anno Di publicazione" VerticalAlignment="Top" Width="120"/>
@@ -18,6 +18,11 @@
         <TextBox x:Name="txtoraIn" TextWrapping="Wrap" Text="orario di apertura" Margin="54,355,622,58"/>
         <TextBox x:Name="txtOraOut" TextWrapping="Wrap" Text="orario di chisura&#xD;&#xA;" Margin="54,377,622,36"/>
         <Label Content="informazioni Biblobteca" Margin="53,294,591,112"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="519,134,71,195"/>
+        <Button Content="Riceraca del libro dal titolo" HorizontalAlignment="Left" Margin="475,48,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTtitoloRic" HorizontalAlignment="Left" Margin="633,48,0,0" TextWrapping="Wrap" Text="inserire il Titolo&#xD;&#xA;" VerticalAlignment="Top" Width="138" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Riceraca del libro dal Autore&#xD;&#xA;" HorizontalAlignment="Left" Margin="461,92,0,0" VerticalAlignment="Top" Height="25" Width="162"/>
+        <TextBox x:Name="txtNomeAutoreRic" HorizontalAlignment="Left" Margin="635,88,0,0" TextWrapping="Wrap" Text="inserire l'Autore&#xD;&#xA;&#xA;" VerticalAlignment="Top" Width="138" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Window>
