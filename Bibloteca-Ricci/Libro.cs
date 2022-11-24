@@ -16,7 +16,7 @@ namespace Bibloteca_Ricci
 
         internal  string toString(Libro Libro) {
 
-            return $"L'autore {Libro.Autore}, Titolo: {Libro.titolo}, anno Di Publicazione: {Libro.AnnoDiPublicazione}, editore: {Libro.Editore}, numero Di Paggine: {Libro.numeroDiPagine} ";
+            return $"L'autore {Libro.Autore},Titolo: {Libro.titolo}, anno Di Publicazione: {Libro.AnnoDiPublicazione},editore: {Libro.Editore},numero Di Paggine: {Libro.numeroDiPagine} ";
         
         }
 
