@@ -36,7 +36,7 @@ namespace Bibloteca_Ricci
             txtEditore.Text = libro.Editore;
             new Bibloteca(libro);
 
-
+        // commento fatto da github
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
